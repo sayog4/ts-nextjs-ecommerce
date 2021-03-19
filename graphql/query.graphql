@@ -4,3 +4,39 @@ query Me {
     email
   }
 }
+
+query allProducts {
+  allProducts {
+    id
+    brand
+    name
+    description
+    countInStock
+    price
+    image
+  }
+}
+
+query adminDisplayProduct {
+  allProducts {
+    id
+    brand
+    name
+    countInStock
+    price
+    image
+    description
+  }
+}
+
+query singleProduct($id: String!) {
+  singleProduct(id: $id) {
+    id
+    brand
+    name
+    countInStock
+    price
+    image
+    description
+  }
+}

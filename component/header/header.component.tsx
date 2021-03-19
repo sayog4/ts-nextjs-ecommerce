@@ -23,6 +23,9 @@ export const HeaderComponent: React.FC = () => {
           <Link href="/login" passHref>
             <Nav.Link>Login</Nav.Link>
           </Link>
+          <Link href="/crud/admin" passHref>
+            <Nav.Link>Admin</Nav.Link>
+          </Link>
           <span
             style={{
               cursor: 'pointer',

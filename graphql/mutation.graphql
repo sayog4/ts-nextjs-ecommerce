@@ -15,3 +15,40 @@ mutation Login($data: LogInInput!) {
     phone
   }
 }
+
+mutation uploadImage($image: String!) {
+  uploadImage(image: $image)
+}
+mutation createProduct($data: CreateProductInput!) {
+  createProduct(data: $data) {
+    id
+    name
+    brand
+    image
+    price
+    countInStock
+    description
+  }
+}
+mutation updateProduct($data: UpdateProductInput!) {
+  updateProduct(data: $data) {
+    id
+    name
+    brand
+    image
+    price
+    countInStock
+    description
+  }
+}
+
+mutation deleteProduct($id: String!) {
+  deleteProduct(id: $id) {
+    id
+    name
+    brand
+    image
+    price
+    countInStock
+  }
+}
