@@ -5,7 +5,6 @@ import {
   NormalizedCacheObject,
   InMemoryCache,
 } from '@apollo/client'
-import { setContext } from '@apollo/client/link/context'
 
 let apolloClient: ApolloClient<NormalizedCacheObject>
 

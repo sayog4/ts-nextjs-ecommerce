@@ -2,6 +2,17 @@ query Me {
   me {
     name
     email
+    cart {
+      quantity
+      product {
+        id
+        brand
+        name
+        price
+        countInStock
+        image
+      }
+    }
   }
 }
 
@@ -38,5 +49,21 @@ query singleProduct($id: String!) {
     price
     image
     description
+  }
+}
+
+query myCart {
+  myCart {
+    id
+    products {
+      product {
+        id
+        brand
+        name
+        image
+        price
+      }
+      quantity
+    }
   }
 }

@@ -52,3 +52,11 @@ mutation deleteProduct($id: String!) {
     countInStock
   }
 }
+
+mutation addToCart($data: AddToCartInput!) {
+  addToCart(data: $data)
+}
+
+mutation removeFromCart($productId: String!) {
+  removeFromCart(productId: $productId)
+}
